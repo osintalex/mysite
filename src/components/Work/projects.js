@@ -31,9 +31,9 @@ export const projects = [
     description: (
       <>
         <Text style={{ marginBottom: "1rem" }}>
-          I worked in a hybrid data science, developer, devops role to analyse
+          I worked in a hybrid data science/developer/devops role to analyse
           social media misinformation. I pioneered a data driven approach to
-          this work and an internal web to make this accessible to my
+          this work and an internal web app to make this accessible to my
           colleagues.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
