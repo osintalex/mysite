@@ -80,30 +80,29 @@ const bio = () => {
         <Box as="span" fontWeight="bold">
           just isn't safe
         </Box>
-        .
-        </Text>
-        <Text>
-        I also really care about inclusion within tech and like to{" "}
+        . I also really care about inclusion within tech and like to{" "}
         <Box as="span" fontWeight="bold">
           mentor developers
         </Box>{" "}
         from marginalised backgrounds.
-          I studied Philosophy at university, so I'm a bit of a nut for{" "}
-          <Box as="span" fontWeight="bold">
-            clean logical processes{" "}
-          </Box>{" "}
-          and this bleeds into my programming style. For instance, I actually
-          really like{" "}
-          <Box as="span" fontWeight="bold">
-            writing tests{" "}
-          </Box>{" "}
-          and{" "}
-          <Box as="span" fontWeight="bold">
-            typing Python statically
-          </Box>
-          . I try to write code that is robust, easy to read, and great at
-          handling errors.
-          </Text>
+      </Text>
+      <Text>
+        I studied Philosophy at university, so I'm a bit of a nut for{" "}
+        <Box as="span" fontWeight="bold">
+          clean logical processes{" "}
+        </Box>{" "}
+        and this bleeds into my programming style. For instance, I actually
+        really like{" "}
+        <Box as="span" fontWeight="bold">
+          writing tests{" "}
+        </Box>{" "}
+        and{" "}
+        <Box as="span" fontWeight="bold">
+          typing Python statically
+        </Box>
+        . I try to write code that is robust, easy to read, and great at
+        handling errors.
+      </Text>
     </Box>
   );
 };

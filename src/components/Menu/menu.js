@@ -1,6 +1,6 @@
 import { Box, HStack, Link } from "@chakra-ui/react";
 import React from "react";
-import logo from "./initials.png";
+import logo from "./initials.svg";
 import { useNavigate } from "react-router";
 
 // Each of the links on the top navbar
@@ -30,7 +30,12 @@ const Navbar = () => {
   const navigate = useNavigate();
   const menuBar = () => {
     return (
-      <HStack isInline spacing={4} alignItems="center" aria-label="navigation-menu">
+      <HStack
+        isInline
+        spacing={4}
+        alignItems="center"
+        aria-label="navigation-menu"
+      >
         {[
           links.map((link) => {
             return (
@@ -80,6 +85,7 @@ const Navbar = () => {
                 height={40}
                 width={40}
                 src={logo}
+                // style={{ imageRendering: "-webkit-optimize-contrast" }}
               />
             </Link>
           </Box>
