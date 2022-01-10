@@ -85,7 +85,6 @@ const Navbar = () => {
                 height={40}
                 width={40}
                 src={logo}
-                // style={{ imageRendering: "-webkit-optimize-contrast" }}
               />
             </Link>
           </Box>

@@ -19,18 +19,6 @@ const Footer = () => {
           alignItems="center"
         >
           <HStack spacing={2}>
-            <Box>
-              <Link
-                href="https://github.com/osintalex/mysite"
-                p={4}
-                rel="noopener noreferrer"
-                target="_blank"
-                d="flex"
-                justifyContent="center"
-              >
-                Source code on github
-              </Link>
-            </Box>
             <Box d="flex" alignItems="center">
               <Link
                 onClick={() => navigate("/")}
@@ -46,11 +34,6 @@ const Footer = () => {
                   src={logo}
                 />
               </Link>
-            </Box>
-            <Box p={4} textAlign="center">
-              <Text>
-                Copyright &copy; {new Date().getFullYear()} Alexander Darby
-              </Text>
             </Box>
           </HStack>
         </Box>
