@@ -1,4 +1,4 @@
-import { Box, HStack, Link } from "@chakra-ui/react";
+import { Box, HStack, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { useNavigate } from "react-router";
 import logo from "../Menu/initials.svg";
@@ -19,6 +19,18 @@ const Footer = () => {
           alignItems="center"
         >
           <HStack spacing={2}>
+            <Box>
+              <Link
+                href="https://github.com/osintalex/mysite"
+                p={4}
+                rel="noopener noreferrer"
+                target="_blank"
+                d="flex"
+                justifyContent="center"
+              >
+                Source code on github
+              </Link>
+            </Box>
             <Box d="flex" alignItems="center">
               <Link
                 onClick={() => navigate("/")}
@@ -34,6 +46,11 @@ const Footer = () => {
                   src={logo}
                 />
               </Link>
+            </Box>
+            <Box p={4} textAlign="center">
+              <Text>
+                Copyright &copy; {new Date().getFullYear()} Alexander Darby
+              </Text>
             </Box>
           </HStack>
         </Box>
