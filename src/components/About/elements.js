@@ -10,7 +10,7 @@ import {
 import React from "react";
 import { GitHub, Linkedin } from "react-feather";
 import Headshot from "./headshot.jpg";
-
+import "./loading.css"
 /**
  * Header JSX element.
  */
@@ -26,12 +26,14 @@ const header = () => {
       >
         <Image
           src={Headshot}
+          fallbackSrc='https://via.placeholder.com/150'
           alt="Alexander Darby"
           height={100}
           width={80}
           quality={100}
-          placeholder="blur"
           style={{ borderRadius: "75%" }}
+          // This handles an annoying error on firefox where it flashes alt text while loading
+          className='headshot'
         />
       </Box>
       <Box>
