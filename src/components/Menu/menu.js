@@ -2,7 +2,7 @@ import { Box, HStack, Link } from "@chakra-ui/react";
 import React from "react";
 import logo from "./initials.svg";
 import { useNavigate } from "react-router";
-
+import "../CSS/loading.css";
 // Each of the links on the top navbar
 const links = [
   {
@@ -85,6 +85,7 @@ const Navbar = () => {
                 height={40}
                 width={40}
                 src={logo}
+                id="image-that-loads"
               />
             </Link>
           </Box>

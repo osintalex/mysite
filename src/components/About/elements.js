@@ -10,7 +10,7 @@ import {
 import React from "react";
 import { GitHub, Linkedin } from "react-feather";
 import Headshot from "./headshot.jpg";
-import "./loading.css"
+import "../CSS/loading.css"
 /**
  * Header JSX element.
  */
@@ -32,7 +32,7 @@ const header = () => {
           quality={100}
           style={{ borderRadius: "75%" }}
           // This handles an annoying error on firefox where it flashes alt text while loading
-          className='headshot'
+          id="image-that-loads"
         />
       </Box>
       <Box>

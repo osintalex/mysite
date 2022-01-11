@@ -1,7 +1,8 @@
-import { Box, HStack, Link, Text } from "@chakra-ui/react";
+import { Box, HStack, Link } from "@chakra-ui/react";
 import React from "react";
 import { useNavigate } from "react-router";
 import logo from "../Menu/initials.svg";
+import "../CSS/loading.css";
 
 /**
  * Footer compnent.
@@ -32,6 +33,7 @@ const Footer = () => {
                   height={40}
                   width={40}
                   src={logo}
+                  id="image-that-loads"
                 />
               </Link>
             </Box>
