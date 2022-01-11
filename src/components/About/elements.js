@@ -26,7 +26,6 @@ const header = () => {
       >
         <Image
           src={Headshot}
-          fallbackSrc='https://via.placeholder.com/150'
           alt="Alexander Darby"
           height={100}
           width={80}
