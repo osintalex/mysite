@@ -55,9 +55,9 @@ export default function Landing() {
                 <Box as="span" color="gray.300">
                   socially engaged{" "}
                 </Box>{" "}
-                open source projects, writing{" "}
+                open source projects,{" "}
                 <Box as="span" color="gray.300">
-                  articles{" "}
+                  writing articles{" "}
                 </Box>
                 about coding, and{" "}
                 <Box as="span" color="gray.300">
