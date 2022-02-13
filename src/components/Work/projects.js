@@ -7,18 +7,20 @@ export const projects = [
     description: (
       <>
         <Text style={{ marginBottom: "1rem" }}>
-          I work as a Senior Associate Software Developer in an agile
-          environment with micorservice architectures. We provide cutting edge
-          research, development, and intelligence to clients and all other
-          cybersecurity business units at PwC.
+          I work as a Senior Associate Software Developer writing code to help
+          analyze Advanced Persistent Threats (APT). I work in an agile
+          development environment that uses microservice architecture in a cloud
+          native infrastructure. My team provides cutting edge research,
+          development, and intelligence to clients and all other cybersecurity
+          business units at PwC.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
         </Heading>
         <UnorderedList style={{ marginLeft: "1rem" }}>
           <ListItem>Python</ListItem>
-          <ListItem>Flask</ListItem>
           <ListItem>React JS</ListItem>
+          <ListItem>Kubernetes</ListItem>
           <ListItem>Docker</ListItem>
           <ListItem>GCP</ListItem>
         </UnorderedList>
