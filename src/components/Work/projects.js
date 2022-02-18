@@ -7,10 +7,9 @@ export const projects = [
     description: (
       <>
         <Text style={{ marginBottom: "1rem" }}>
-          I work as a Senior Associate Software Developer writing code to help
-          analyze Advanced Persistent Threats (APT). I work in an agile
-          development environment that uses microservice architecture in a cloud
-          native infrastructure. My team provides cutting edge research,
+          I work as a Senior Software Developer writing code to help
+          analyze Advanced Persistent Threats (APTs). Think nation state hackers
+          and organized crime! My team provides cutting edge research,
           development, and intelligence to clients and all other cybersecurity
           business units at PwC.
         </Text>
