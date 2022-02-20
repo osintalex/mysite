@@ -66,6 +66,5 @@ const Spinner = styled.span`
   padding: 1rem;
   font-size: 2rem;
   justify-content: center;
-  display: grid;
 `;
 export default NotFound;

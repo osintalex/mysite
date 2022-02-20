@@ -12,6 +12,7 @@ import Menu from "../Menu/menu.js";
 import Footer from "../Footer/footer.js";
 import { Loader } from "react-feather";
 import { articleList } from "./elements.js";
+import "./blog.css";
 
 // Used to parse medium API response
 const parser = new DOMParser();
@@ -99,7 +100,9 @@ export default function Blog() {
                 </VStack>
 
                 {isLoading ? (
-                  <Loader role="loading" />
+                  <Box>
+                    <Loader role="loading" className="spinning-loader" />
+                  </Box>
                 ) : (
                   medium.map((article, index) => {
                     return (
