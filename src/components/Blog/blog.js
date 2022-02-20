@@ -21,9 +21,24 @@ export default function Blog() {
   const [isLoading, setIsLoading] = useState(true);
 
   /**
-   * Function to fetch and parse data from the medium API and save it into state.
+   * Function to parse description content, which annoyingly changes sometimes.
+   * @param {String} description
+   * @returns {String} result, a concise relevant description for each post
    */
-  const fetchData = () => {
+  const parseDescription = (description) => {
+    const parsed = parser.parseFromString(description, "text/html");
+    const result =
+      parsed.querySelector("p.medium-feed-snippet") !== null
+        ? parsed.querySelector("p.medium-feed-snippet").textContent
+        : parsed.querySelector("p").textContent;
+    return result;
+  };
+
+  //
+  /**
+   * Hook to call the above function along with cleanup.
+   */
+  useEffect(() => {
     fetch(
       "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@alexanderdarby",
       {
@@ -38,9 +53,7 @@ export default function Blog() {
           data.items.map((x) => {
             return {
               title: x.title,
-              description: parser
-                .parseFromString(x.description, "text/html")
-                .querySelector("p.medium-feed-snippet").textContent,
+              description: parseDescription(x.description),
               url: x.link,
               date: x.pubDate.split(" ")[0],
             };
@@ -51,17 +64,11 @@ export default function Blog() {
       .catch((error) => {
         console.log(error);
       });
-  };
-  /**
-   * Hook to call the above function along with cleanup.
-   */
-  useEffect(() => {
-    fetchData();
+
     return () => {
       setMedium([]);
     };
   }, []);
-
   return (
     <>
       <Menu />
