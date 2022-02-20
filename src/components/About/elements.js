@@ -10,9 +10,10 @@ import {
 import React from "react";
 import { GitHub, Linkedin } from "react-feather";
 import Headshot from "./headshot.jpg";
-import "../CSS/loading.css"
+import "../CSS/loading.css";
 /**
  * Header JSX element.
+ * @return {JSX} header html as jsx
  */
 const header = () => {
   return (
@@ -31,7 +32,8 @@ const header = () => {
           width={80}
           quality={100}
           style={{ borderRadius: "75%" }}
-          // This handles an annoying error on firefox where it flashes alt text while loading
+          // This handles an annoying error on firefox where it
+          // flashes alt text while loading
           id="image-that-loads"
         />
       </Box>
@@ -49,6 +51,7 @@ const header = () => {
 
 /**
  * Bio element.
+ * @return {JSX} html for bio as jsx
  */
 const bio = () => {
   return (
@@ -76,10 +79,10 @@ const bio = () => {
         <Box as="span" fontWeight="bold">
           cybersecurity <span>🖥️ </span>{" "}
         </Box>{" "}
-        since I think it's a worthwhile thing to do. Right now, we're building
-        the infrastructure of the future and so much of it{" "}
+        since I think it&apos;s a worthwhile thing to do. Right now, we&apos;re
+        building the infrastructure of the future and so much of it{" "}
         <Box as="span" fontWeight="bold">
-          just isn't safe
+          just isn&apos;t safe
         </Box>
         . I also really care about inclusion within tech and like to{" "}
         <Box as="span" fontWeight="bold">
@@ -88,7 +91,7 @@ const bio = () => {
         from marginalised backgrounds.
       </Text>
       <Text>
-        I studied Philosophy at university, so I'm a bit of a nut for{" "}
+        I studied Philosophy at university, so I&apos;m a bit of a nut for{" "}
         <Box as="span" fontWeight="bold">
           clean logical processes{" "}
         </Box>{" "}
@@ -110,6 +113,7 @@ const bio = () => {
 
 /**
  * Socials JSX element.
+ * @return {JSX} html for socials as jsx.
  */
 const socials = () => {
   return (

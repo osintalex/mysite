@@ -16,6 +16,10 @@ import { articleList } from "./elements.js";
 // Used to parse medium API response
 const parser = new DOMParser();
 
+/**
+ * Blog component.
+ * @return {component} the blog component.
+ */
 export default function Blog() {
   const [medium, setMedium] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +27,7 @@ export default function Blog() {
   /**
    * Function to parse description content, which annoyingly changes sometimes.
    * @param {String} description
-   * @returns {String} result, a concise relevant description for each post
+   * @return {String} result, a concise relevant description for each post
    */
   const parseDescription = (description) => {
     const parsed = parser.parseFromString(description, "text/html");

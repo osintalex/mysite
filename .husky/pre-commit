@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx prettier --write 'src/**/{*.js,*.css}'
+npx eslint --fix 'src/**/*.js'
+npm test -- --watchAll=false

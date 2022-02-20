@@ -1,3 +1,5 @@
+/* eslint-disable no-irregular-whitespace */
+/* eslint-disable max-len */
 import React from "react";
 import LandingPage from "../Landing/landing.js";
 import About from "../About/about.js";
@@ -10,6 +12,7 @@ import customTheme from "../Theme/theme.js";
 
 /**
  * Main App function. Uses client side routing with React Router.
+ * @return {component} the applicaiton!
  */
 function App() {
   console.log(`

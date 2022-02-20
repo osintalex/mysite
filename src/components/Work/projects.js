@@ -1,3 +1,4 @@
+import { React } from "react";
 import { Text, ListItem, UnorderedList, Heading } from "@chakra-ui/react";
 
 // Array of objects containing information on each project
@@ -7,11 +8,11 @@ export const projects = [
     description: (
       <>
         <Text style={{ marginBottom: "1rem" }}>
-          I work as a Senior Software Developer writing code to help
-          analyze Advanced Persistent Threats (APTs). Think nation state hackers
-          and organized crime! My team provides cutting edge research,
-          development, and intelligence to clients and all other cybersecurity
-          business units at PwC.
+          I work as a Senior Software Developer writing code to help analyze
+          Advanced Persistent Threats (APTs). Think nation state hackers and
+          organized crime! My team provides cutting edge research, development,
+          and intelligence to clients and all other cybersecurity business units
+          at PwC.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
@@ -58,7 +59,7 @@ export const projects = [
         <Text style={{ marginBottom: "1rem" }}>
           I completed a fantastic data science bootcamp course. For my capstone,
           I built a project looking at what drove divisiveness in President
-          Trump's tweets.
+          Trump&pos;s tweets.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
@@ -104,8 +105,8 @@ export const projects = [
         <Text style={{ marginBottom: "1rem" }}>
           I built a social justice focus web app to focus on the effects of
           structural racism in the UK, using data from the Office of National
-          Statistics and the UK Police's own data API. I'm hopeful it made a
-          small difference during the protest movement in the UK.
+          Statistics and the UK Police&pos;s own data API. I&pos;m hopeful it
+          made a small difference during the protest movement in the UK.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:

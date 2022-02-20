@@ -1,9 +1,10 @@
+import { React } from "react";
 import { Button, Heading } from "@chakra-ui/react";
 
 /**
  * Title for a work card.
- * @param {String} title 
- * @returns JSX element - the title
+ * @param {String} title
+ * @return {JSX} the title.
  */
 const workTitle = (title) => {
   return (
@@ -15,6 +16,7 @@ const workTitle = (title) => {
 
 /**
  * CTA style button for each project.
+ * @return {JSX} the button.
  */
 const workButton = () => {
   return (

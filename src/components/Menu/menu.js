@@ -25,6 +25,7 @@ const links = [
 
 /**
  * Navigation menu component.
+ * @return {component} the menubar.
  */
 const Navbar = () => {
   const navigate = useNavigate();

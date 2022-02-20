@@ -75,8 +75,9 @@ describe("Blog", () => {
   test("renders loading correctly", async () => {
     render(<Blog />);
     act(() => expect(screen.getByRole("loading")).toBeInTheDocument());
-    // This removes a code not wrapped in act warning triggered by other state events
-    // namely setMedium and setLoading
+    /* This removes a code not wrapped in act warning triggered by other
+     * state events, namely setMedium and setLoading
+     */
     await waitFor(() => screen.findByRole(/loading/));
   });
   test("renders all Blog material", async () => {

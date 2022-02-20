@@ -7,6 +7,7 @@ import { projects } from "./projects.js";
 
 /**
  * Work component.
+ * @return {JSX} work component.
  */
 export default function Work() {
   return (
@@ -20,14 +21,14 @@ export default function Work() {
                 Professional Experience
               </Heading>
               <Text>
-                This section is a mix of positions I've held full time and
+                This section is a mix of positions I&apos;ve held full time and
                 personal coding projects.
               </Text>
             </VStack>
           </Box>
 
           <Grid templateColumns="1fr">
-            <Box as="section" >
+            <Box as="section">
               <Grid
                 templateColumns={[
                   "repeat(1, 1fr)",
@@ -39,40 +40,34 @@ export default function Work() {
               >
                 {projects.map((project, index) => {
                   return (
-                 
-                      <Box
-                        as="div"
-                        key={`first container ${index}`}
-                        bg="gray.800"
-                        color="white"
-                        rounded="sm"
+                    <Box
+                      as="div"
+                      key={`first container ${index}`}
+                      bg="gray.800"
+                      color="white"
+                      rounded="sm"
+                    >
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        <a
-                          href={project.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-
-                        >
-                          <Box p={8} as="div" key={`second container ${index}`}>
-                            <VStack
-                              spacing={4}
-                              minH={48}
-                              justifyContent="space-between"
-                              align="left"
-
-                            >
-                              <VStack
-                                spacing={1}
-                                align="left"
-                              >
-                                {workTitle(project.title)}
-                                {project.description}
-                              </VStack>
-                              {project.url ? <Box>{workButton()}</Box> : null}
+                        <Box p={8} as="div" key={`second container ${index}`}>
+                          <VStack
+                            spacing={4}
+                            minH={48}
+                            justifyContent="space-between"
+                            align="left"
+                          >
+                            <VStack spacing={1} align="left">
+                              {workTitle(project.title)}
+                              {project.description}
                             </VStack>
-                          </Box>
-                        </a>
-                      </Box>
+                            {project.url ? <Box>{workButton()}</Box> : null}
+                          </VStack>
+                        </Box>
+                      </a>
+                    </Box>
                   );
                 })}
               </Grid>

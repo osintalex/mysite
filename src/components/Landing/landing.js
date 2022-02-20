@@ -7,6 +7,7 @@ import { keyframes } from "styled-components";
 
 /**
  * Landing page component.
+ * @return {component} the landing page :-)
  */
 export default function Landing() {
   return (
@@ -33,7 +34,9 @@ export default function Landing() {
             textAlign="center"
           >
             <Box>
-              <AnimatedGradientText>Hi, I'm Alexander</AnimatedGradientText>
+              <AnimatedGradientText>
+                Hi, I&apos;m Alexander
+              </AnimatedGradientText>
             </Box>
             <Box>
               <Heading
@@ -43,7 +46,7 @@ export default function Landing() {
                 color="gray.500"
                 fontWeight="medium"
               >
-                I'm a{" "}
+                I&apos;m a{" "}
                 <Box as="span" color="gray.300">
                   full stack developer{" "}
                 </Box>

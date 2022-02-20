@@ -6,8 +6,10 @@ import Menu from "../Menu/menu.js";
 import { Heading, Box, SlideFade, VStack } from "@chakra-ui/react";
 
 /**
- * Very basic 404; not found routing handled in app.js. Probably overkill to add styled components for this
+ * Very basic 404; not found routing handled in app.js.
+ * Probably overkill to add styled components for this
  * but hey it was fun.
+ * @return {component} not found component.
  */
 const NotFound = () => {
   return (
@@ -36,7 +38,7 @@ const NotFound = () => {
           >
             <Box>
               <Heading as="h2" size="xl">
-                Oh no, that url doesn't exist!
+                Oh no, that url doesn&apos;t exist!
               </Heading>
               <Spinner>😱</Spinner>
             </Box>

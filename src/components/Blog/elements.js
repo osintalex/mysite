@@ -1,9 +1,10 @@
+import React from "react";
 import { Box, Heading, Text, VStack } from "@chakra-ui/react";
 
 /**
  * Date element for article
  * @param {String} date
- * @returns JSX element.
+ * @return {JSX} the date.
  */
 const postDate = (date) => {
   return (
@@ -18,7 +19,7 @@ const postDate = (date) => {
 /**
  * Title element for article
  * @param {String} title
- * @returns JSX element.
+ * @return {JSX} the title.
  */
 const postTitle = (title) => {
   return (
@@ -31,7 +32,7 @@ const postTitle = (title) => {
 /**
  * Description element for article
  * @param {String} description
- * @returns JSX element.
+ * @return {JSX} article description.
  */
 const postDescription = (description) => {
   return <Text fontSize="sm">{description}</Text>;
@@ -39,9 +40,10 @@ const postDescription = (description) => {
 
 /**
  * List of all articles returned from medium RSS feed.
- * @param {Array} article contains objects pertaining to parsed articles from the RSS feed
+ * @param {Array} article contains objects pertaining to parsed articles
+ * from the RSS feed.
  * @param {Number} index just the index of each item in the list
- * @returns JSX elements for each articl
+ * @return {JSX} elements for each article.
  */
 const articleList = (article, index) => {
   return (
