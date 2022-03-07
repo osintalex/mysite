@@ -1,6 +1,5 @@
 .spinning-loader {
   animation: spin infinite 4s linear;
-
 }
 
 @keyframes spin {

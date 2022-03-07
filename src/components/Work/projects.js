@@ -59,7 +59,7 @@ export const projects = [
         <Text style={{ marginBottom: "1rem" }}>
           I completed a fantastic data science bootcamp course. For my capstone,
           I built a project looking at what drove divisiveness in President
-          Trump&pos;s tweets.
+          Trump&apos;s tweets.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
@@ -105,7 +105,7 @@ export const projects = [
         <Text style={{ marginBottom: "1rem" }}>
           I built a social justice focus web app to focus on the effects of
           structural racism in the UK, using data from the Office of National
-          Statistics and the UK Police&pos;s own data API. I&pos;m hopeful it
+          Statistics and the UK Police&apos;s own data API. I&apos;m hopeful it
           made a small difference during the protest movement in the UK.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
