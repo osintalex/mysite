@@ -7,7 +7,7 @@ import { projects } from "./projects.js";
 
 /**
  * Work component.
- * @return {JSX} work component.
+ * @return {ReactElement} work component.
  */
 export default function Work() {
   return (

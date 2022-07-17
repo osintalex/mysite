@@ -9,7 +9,7 @@ import { Heading, Box, SlideFade, VStack } from "@chakra-ui/react";
  * Very basic 404; not found routing handled in app.js.
  * Probably overkill to add styled components for this
  * but hey it was fun.
- * @return {component} not found component.
+ * @return {ReactElement} not found component.
  */
 const NotFound = () => {
   return (

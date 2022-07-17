@@ -6,7 +6,7 @@ import { header, bio, socials } from "./elements.js";
 
 /**
  * About component.
- * @return {Component} about component.
+ * @return {ReactElement} about component.
  */
 export default function About() {
   return (

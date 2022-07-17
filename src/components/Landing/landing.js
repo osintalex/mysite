@@ -7,7 +7,7 @@ import { keyframes } from "styled-components";
 
 /**
  * Landing page component.
- * @return {component} the landing page :-)
+ * @return {ReactElement} the landing page :-)
  */
 export default function Landing() {
   return (

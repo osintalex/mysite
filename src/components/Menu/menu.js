@@ -25,7 +25,7 @@ const links = [
 
 /**
  * Navigation menu component.
- * @return {component} the menubar.
+ * @return {ReactElement} the menubar.
  */
 const Navbar = () => {
   const navigate = useNavigate();
