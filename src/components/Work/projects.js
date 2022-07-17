@@ -19,10 +19,11 @@ export const projects = [
         </Heading>
         <UnorderedList style={{ marginLeft: "1rem" }}>
           <ListItem>Python</ListItem>
-          <ListItem>React JS</ListItem>
+          <ListItem>JavaScript/Typescript</ListItem>
           <ListItem>Kubernetes</ListItem>
           <ListItem>Docker</ListItem>
           <ListItem>GCP</ListItem>
+          <ListItem>Terraform</ListItem>
         </UnorderedList>
       </>
     ),
