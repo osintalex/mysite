@@ -19,7 +19,7 @@ const parser = new DOMParser();
 
 /**
  * Blog component.
- * @return {component} the blog component.
+ * @return {ReactElement} the blog component.
  */
 export default function Blog() {
   const [medium, setMedium] = useState([]);

@@ -6,7 +6,7 @@ import "../CSS/loading.css";
 
 /**
  * Footer compnent.
- * @return {component} Footer component.
+ * @return {ReactElement} Footer component.
  */
 const Footer = () => {
   const navigate = useNavigate();

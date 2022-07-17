@@ -12,7 +12,7 @@ import customTheme from "../Theme/theme.js";
 
 /**
  * Main App function. Uses client side routing with React Router.
- * @return {component} the applicaiton!
+ * @return {ReactElement} the applicaiton!
  */
 function App() {
   console.log(`
