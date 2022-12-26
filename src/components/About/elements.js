@@ -54,6 +54,8 @@ const header = () => {
  * @return {JSX} html for bio as jsx
  */
 const bio = () => {
+  const technologies = ["TypeScript", "Go", "Kubernetes", "Terraform"];
+  const technologiesLength = technologies.length;
   return (
     <Box className="article" as="div">
       <Text>
@@ -63,16 +65,18 @@ const bio = () => {
         <Box as="span" fontWeight="bold">
           Python <span>🐍</span>{" "}
         </Box>
-        for assistance. I now work full stack with Python as my primary
-        language,{" "}
-        <Box as="span" fontWeight="bold">
-          JavaScript{" "}
-        </Box>
-        as my secondary, and dabble in{" "}
-        <Box as="span" fontWeight="bold">
-          Dev Ops{" "}
-        </Box>
-        for my sins.
+        for assistance. I now work full stack with Python,
+        {technologies.map((x, index) => (
+          <>
+            <Box as="span" fontWeight="bold" key={index}>
+              {" "}
+              {x}
+            </Box>
+            {index < technologiesLength - 2 && ","}
+            {index === technologiesLength - 1 && "."}
+            {index === technologiesLength - 2 && " and"}{" "}
+          </>
+        ))}
       </Text>
       <Text>
         I really enjoy working in{" "}
@@ -88,7 +92,7 @@ const bio = () => {
         <Box as="span" fontWeight="bold">
           mentor developers
         </Box>{" "}
-        from marginalised backgrounds.
+        as much as I can.
       </Text>
       <Text>
         I studied Philosophy at university, so I&apos;m a bit of a nut for{" "}
