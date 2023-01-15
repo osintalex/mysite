@@ -18,6 +18,10 @@ const links = [
     title: "Blog",
   },
   {
+    url: "/talks",
+    title: "Talks",
+  },
+  {
     url: "/about",
     title: "About",
   },
