@@ -6,7 +6,7 @@ import { Box, Heading, Text, VStack } from "@chakra-ui/react";
  * @param {String} date
  * @return {JSX} the date.
  */
-const postDate = (date) => {
+export const postDate = (date) => {
   return (
     <Box>
       <Text fontSize="sm" color="gray.400">
@@ -21,7 +21,7 @@ const postDate = (date) => {
  * @param {String} title
  * @return {JSX} the title.
  */
-const postTitle = (title) => {
+export const postTitle = (title) => {
   return (
     <Heading as="h3" size="md" color="blue.400" fontWeight="bold">
       {title}
@@ -34,7 +34,7 @@ const postTitle = (title) => {
  * @param {String} description
  * @return {JSX} article description.
  */
-const postDescription = (description) => {
+export const postDescription = (description) => {
   return <Text fontSize="sm">{description}</Text>;
 };
 

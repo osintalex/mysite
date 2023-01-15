@@ -7,7 +7,7 @@ import {
   VStack,
   Image,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { Fragment } from "react";
 import { GitHub, Linkedin } from "react-feather";
 import Headshot from "./headshot.jpg";
 import "../CSS/loading.css";
@@ -67,15 +67,15 @@ const bio = () => {
         </Box>
         for assistance. I now work full stack with Python,
         {technologies.map((x, index) => (
-          <>
-            <Box as="span" fontWeight="bold" key={index}>
+          <Fragment key={`${x}-${index}`}>
+            <Box as="span" fontWeight="bold">
               {" "}
               {x}
             </Box>
             {index < technologiesLength - 2 && ","}
             {index === technologiesLength - 1 && "."}
             {index === technologiesLength - 2 && " and"}{" "}
-          </>
+          </Fragment>
         ))}
       </Text>
       <Text>
