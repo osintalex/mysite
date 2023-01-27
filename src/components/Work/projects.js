@@ -1,5 +1,5 @@
 import { React } from "react";
-import { Text, ListItem, UnorderedList, Heading, Link } from "@chakra-ui/react";
+import { Text, ListItem, UnorderedList, Heading } from "@chakra-ui/react";
 
 // Array of objects containing information on each project
 export const projects = [
@@ -8,17 +8,10 @@ export const projects = [
     description: (
       <>
         <Text style={{ marginBottom: "1rem" }}>
-          I&apos;m a Senior Staff Software Engineer in{" "}
-          <Link
-            href="https://unit42.paloaltonetworks.com/"
-            fontWeight="bold"
-            isExternal
-          >
-            Unit 42
-          </Link>
-          , Palo Alto Network&apos;s industry leading cyber threat intelligence
-          and incident response practice. We work on some really cool stuff that
-          I can&apos;t tell you about 😉.
+          I&apos;m a Senior Staff Software Engineer in Unit 42, Palo Alto
+          Network&apos;s industry leading cyber threat intelligence and incident
+          response practice. We work on some really cool stuff that I can&apos;t
+          tell you about 😉.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
