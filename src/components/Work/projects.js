@@ -1,14 +1,45 @@
 import { React } from "react";
-import { Text, ListItem, UnorderedList, Heading } from "@chakra-ui/react";
+import { Text, ListItem, UnorderedList, Heading, Link } from "@chakra-ui/react";
 
 // Array of objects containing information on each project
 export const projects = [
+  {
+    title: "Palo Alto Networks",
+    description: (
+      <>
+        <Text style={{ marginBottom: "1rem" }}>
+          I&apos;m a Senior Staff Software Engineer in{" "}
+          <Link
+            href="https://unit42.paloaltonetworks.com/"
+            fontWeight="bold"
+            isExternal
+          >
+            Unit 42
+          </Link>
+          , Palo Alto Network&apos;s industry leading cyber threat intelligence
+          and incident response practice. We work on some really cool stuff that
+          I can&apos;t tell you about 😉.
+        </Text>
+        <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
+          Technologies:
+        </Heading>
+        <UnorderedList style={{ marginLeft: "1rem" }}>
+          <ListItem>Python</ListItem>
+          <ListItem>JavaScript</ListItem>
+          <ListItem>React</ListItem>
+          <ListItem>Kubernetes</ListItem>
+          <ListItem>GCP</ListItem>
+        </UnorderedList>
+      </>
+    ),
+    url: null,
+  },
   {
     title: "PwC Cybersecurity",
     description: (
       <>
         <Text style={{ marginBottom: "1rem" }}>
-          I work as a Senior Software Developer writing code to help analyze
+          I worked as a Senior Software Engineer writing code to help analyze
           Advanced Persistent Threats (APTs). Think nation state hackers and
           organized crime! My team provides cutting edge research, development,
           and intelligence to clients and all other cybersecurity business units
@@ -22,7 +53,6 @@ export const projects = [
           <ListItem>JavaScript/Typescript</ListItem>
           <ListItem>Go</ListItem>
           <ListItem>Kubernetes</ListItem>
-          <ListItem>Docker</ListItem>
           <ListItem>GCP</ListItem>
           <ListItem>Terraform</ListItem>
         </UnorderedList>
@@ -47,7 +77,6 @@ export const projects = [
           <ListItem>Python</ListItem>
           <ListItem>Pandas/Scikit Learn/Numpy</ListItem>
           <ListItem>GCP/Azure</ListItem>
-          <ListItem>Docker</ListItem>
           <ListItem>Flask</ListItem>
         </UnorderedList>
       </>
@@ -94,7 +123,6 @@ export const projects = [
           <ListItem>Django</ListItem>
           <ListItem>React JS</ListItem>
           <ListItem>Digital Ocean</ListItem>
-          <ListItem>Docker</ListItem>
         </UnorderedList>
       </>
     ),
@@ -121,26 +149,5 @@ export const projects = [
       </>
     ),
     url: "https://github.com/osintalex/Dash-BLM",
-  },
-  {
-    title: "UK Travel Site",
-    description: (
-      <>
-        <Text style={{ marginBottom: "1rem" }}>
-          I got so fed up with increasing travel restrictions in the UK that I
-          built my own Django site to scrape data from the UK government
-          advisories and have it all in one place.
-        </Text>
-        <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
-          Technologies:
-        </Heading>
-        <UnorderedList style={{ marginLeft: "1rem" }}>
-          <ListItem>Python</ListItem>
-          <ListItem>Django</ListItem>
-          <ListItem>Keras</ListItem>
-        </UnorderedList>
-      </>
-    ),
-    url: "https://github.com/osintalex/uktravelsite",
   },
 ];
