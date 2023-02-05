@@ -10,7 +10,7 @@ export const projects = [
         <Text style={{ marginBottom: "1rem" }}>
           I&apos;m a Senior Staff Software Engineer in Unit 42, Palo Alto
           Network&apos;s industry leading cyber threat intelligence and incident
-          response practice. We work on some really cool stuff but I told you
+          response practice. We work on some really cool stuff but if I told you
           what, then I&apos;d have to kill you 😉.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
