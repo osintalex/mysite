@@ -48,7 +48,7 @@ export default function Landing() {
               >
                 I&apos;m a{" "}
                 <Box as="span" color="gray.300">
-                  full stack developer{" "}
+                  software engineer{" "}
                 </Box>
                 working in{" "}
                 <Box as="span" color="gray.300">
@@ -66,7 +66,7 @@ export default function Landing() {
                 <Box as="span" color="gray.300">
                   mentoring{" "}
                 </Box>
-                developers.
+                other developers.
               </Heading>
             </Box>
           </VStack>

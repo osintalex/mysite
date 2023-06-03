@@ -8,10 +8,11 @@ export const projects = [
     description: (
       <>
         <Text style={{ marginBottom: "1rem" }}>
-          I&apos;m a Senior Staff Software Engineer in Unit 42, Palo Alto
-          Network&apos;s industry leading cyber threat intelligence and incident
-          response practice. We work on some really cool stuff but if I told you
-          what, then I&apos;d have to kill you 😉.
+          I&apos;m a Senior Staff Software Engineer in Unit 4 at Palo Alto
+          Network&apos;s, where I write cloud native software to support Unit
+          42&apos;s market leading threat research. I work on distributed
+          systems to enable data analysis at scale and update systems to use
+          modern best practices such as Infrastructure as Code.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
