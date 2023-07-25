@@ -10,9 +10,8 @@ export const projects = [
         <Text style={{ marginBottom: "1rem" }}>
           I&apos;m a Senior Staff Software Engineer in Unit 4 at Palo Alto
           Network&apos;s, where I write cloud native software to support Unit
-          42&apos;s market leading threat research. I work on distributed
-          systems to enable data analysis at scale and update systems to use
-          modern best practices such as Infrastructure as Code.
+          42&apos;s market leading threat research. I maintain and implement
+          distributed systems to enable threat intelligence at massive scale.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:

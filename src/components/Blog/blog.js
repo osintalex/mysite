@@ -12,7 +12,7 @@ import Menu from "../Menu/menu.js";
 import Footer from "../Footer/footer.js";
 import { Loader } from "react-feather";
 import { articleList } from "./elements.js";
-import "./blog.css";
+import "../CSS/blog.css";
 
 // Used to parse medium API response
 const parser = new DOMParser();
