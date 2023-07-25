@@ -1,7 +1,7 @@
 import React from "react";
 import { postDate, postTitle, postDescription } from "../Blog/elements.js";
 import { Box, VStack, Tag, TagLabel } from "@chakra-ui/react";
-import "./talks.css";
+import "../CSS/talks.css";
 
 /**
  * Tags for talk recording and slide links.

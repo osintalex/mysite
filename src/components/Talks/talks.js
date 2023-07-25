@@ -4,7 +4,7 @@ import Menu from "../Menu/menu.js";
 import Footer from "../Footer/footer.js";
 import { talksList } from "./elements.js";
 import { talkDetails } from "./details.js";
-import "../Blog/blog.css";
+import "../CSS/blog.css";
 
 /**
  * Talks component.

@@ -17,5 +17,16 @@ export const talkDetails = [
     But we're software engineers, not hackers. So how do we do that?`,
     slidesLink:
       "https://drive.google.com/file/d/1QhmHJMdgtzATrbwCYRcJr51WXPxOt1Gw",
+    recordingLink:
+      "https://www.youtube.com/live/Z9NZJL4yUQI?si=VCqdpcqkL4hiM5ig&t=6209",
+  },
+  {
+    date: "2023-07-21",
+    title: "A Magic Implementation of NotImplemented",
+    description: `Dirty Equals is a new python library by Samuel Colvin, the creator of Pydantic. It will transform how you write tests, especially for APIs.
+
+    I made some contributions to it, which forever changed how I thought about NotImplemented.`,
+    slidesLink:
+      "https://drive.google.com/file/d/1sKuI4-PhjWtR6I5kd-CEN0GHv_ElrMcC",
   },
 ];
