@@ -17,8 +17,7 @@ export const talkDetails = [
     But we're software engineers, not hackers. So how do we do that?`,
     slidesLink:
       "https://drive.google.com/file/d/1QhmHJMdgtzATrbwCYRcJr51WXPxOt1Gw",
-    recordingLink:
-      "https://www.youtube.com/live/Z9NZJL4yUQI?si=VCqdpcqkL4hiM5ig&t=6209",
+    recordingLink: "https://www.youtube.com/watch?v=td4X_h85CSg",
   },
   {
     date: "2023-07-21",
