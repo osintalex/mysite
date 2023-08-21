@@ -12,6 +12,7 @@ export const projects = [
           Network&apos;s, where I write cloud native software to support Unit
           42&apos;s market leading threat research. I maintain and implement
           distributed systems to enable threat intelligence at massive scale.
+          Winner of company wide AI mastermind challenge.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
