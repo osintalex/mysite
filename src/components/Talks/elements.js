@@ -64,6 +64,9 @@ const talksList = (talk, index) => {
           <VStack spacing={1} align="left">
             {postDate(talk.date)}
             {postTitle(talk.title)}
+            <Box as="span" fontWeight="bold">
+              {talk.conference}
+            </Box>
             {postDescription(talk.description)}
             {(talk.slidesLink || talk.recordingLink) &&
               talkTags(talk.slidesLink, talk.recordingLink)}
