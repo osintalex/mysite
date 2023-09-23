@@ -8,8 +8,8 @@ export const projects = [
     description: (
       <>
         <Text style={{ marginBottom: "1rem" }}>
-          I&apos;m a Senior Staff Software Engineer in Unit 4 at Palo Alto
-          Network&apos;s, where I write cloud native software to support Unit
+          I&apos;m a Senior Staff Software Engineer in Unit 42 at Palo Alto
+          Networks, where I write cloud native software to support Unit
           42&apos;s market leading threat research. I maintain and implement
           distributed systems to enable threat intelligence at massive scale.
         </Text>
@@ -20,7 +20,7 @@ export const projects = [
           <ListItem>Python</ListItem>
           <ListItem>JavaScript</ListItem>
           <ListItem>Kubernetes</ListItem>
-          <ListItem>GCP</ListItem>
+          <ListItem>GCP/AWS</ListItem>
           <ListItem>Terraform</ListItem>
         </UnorderedList>
       </>
