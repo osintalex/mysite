@@ -8,17 +8,17 @@ export const projects = [
     description: (
       <>
         <Text style={{ marginBottom: "1rem" }}>
-          I&apos;m a Senior Staff Software Engineer in Unit 42 at Palo Alto
-          Networks, where I write cloud native software to support Unit
-          42&apos;s market leading threat research. I maintain and implement
-          distributed systems to enable threat intelligence at massive scale.
+          I&apos;m a Senior Staff Software Engineer at Palo Alto Networks, where
+          I write cloud native software to support market leading threat
+          research. I maintain and implement distributed systems to enable
+          threat intelligence at massive scale.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
         </Heading>
         <UnorderedList style={{ marginLeft: "1rem" }}>
           <ListItem>Python</ListItem>
-          <ListItem>JavaScript</ListItem>
+          <ListItem>JavaScript/Typescript</ListItem>
           <ListItem>Kubernetes</ListItem>
           <ListItem>GCP/AWS</ListItem>
           <ListItem>Terraform</ListItem>
@@ -34,7 +34,7 @@ export const projects = [
         <Text style={{ marginBottom: "1rem" }}>
           I worked as a Senior Software Engineer writing code to help analyze
           Advanced Persistent Threats (APTs). Think nation state hackers and
-          organized crime! My team provides cutting edge research, development,
+          organized crime! My team provided cutting edge research, development,
           and intelligence to clients and all other cybersecurity business units
           at PwC.
         </Text>
