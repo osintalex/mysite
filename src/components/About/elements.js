@@ -27,7 +27,7 @@ const header = () => {
       >
         <Image
           src={Headshot}
-          alt="Alexander Darby"
+          alt=""
           height={100}
           width={80}
           quality={100}
