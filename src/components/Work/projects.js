@@ -8,10 +8,9 @@ export const projects = [
     description: (
       <>
         <Text style={{ marginBottom: "1rem" }}>
-          I&apos;m a Senior Staff Software Engineer at Palo Alto Networks, where
-          I write cloud native software to support market leading threat
-          research. I maintain and implement distributed systems to enable
-          threat intelligence at massive scale.
+          I&apos;m a Principal Software Engineer at Palo Alto Networks, where I
+          design and maintain distributed systems to enable threat intelligence
+          at massive scale.
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
