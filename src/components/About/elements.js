@@ -54,7 +54,7 @@ const header = () => {
  * @return {JSX} html for bio as jsx
  */
 const bio = () => {
-  const technologies = ["TypeScript", "Go", "Kubernetes", "Terraform"];
+  const technologies = ["TypeScript", "Go", "Rust", "Kubernetes", "Terraform"];
   const technologiesLength = technologies.length;
   return (
     <Box className="article" as="div">
