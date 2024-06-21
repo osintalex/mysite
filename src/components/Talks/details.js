@@ -4,8 +4,9 @@ export const talkDetails = [
     date: "2022-12-10",
     conference: "BSides",
     title: "Everybody Loves TAXII",
-    description:
-      "These days, it seems like everyone and their mother wants a TAXII server. But how do you actually build one quickly and well?",
+    description: `These days, it seems like everyone and their mother wants a TAXII
+      (Trusted Automated eXchange of Intelligence Information)
+      server. But how do you actually build one quickly and well?`,
     slidesLink: "https://cryptpad.fr/file/#/2/file/uiNS9iFTnCAb6iK9d2cR78I3/",
     recordingLink: "https://www.youtube.com/watch?v=vv2EA3IapQ8",
   },
@@ -31,6 +32,18 @@ export const talkDetails = [
     slidesLink:
       "https://drive.google.com/file/d/1sKuI4-PhjWtR6I5kd-CEN0GHv_ElrMcC",
     recordingLink: "https://www.youtube.com/watch?v=L-npVKkcnrQ",
+  },
+  {
+    date: "2024-06-17",
+    conference: "PyData London",
+    title: " 5 Things I Learnt from Causing a Cloud Provider Outage",
+    description: `Earlier this year, my team caused an outage across Europe for a major cloud provider. 
+    The incident response taught me a lot about working with cloud data lake systems at massive scale. 
+    How do you make these systems performant, resilient, and easy to maintain? 
+    And of course, how do you stop them from behaving like a DDOS attack on the cloud provider?`,
+    slidesLink:
+      "https://drive.google.com/file/d/1OrKJhOOOXPMzISnSfR-nKEMf-TmnUJlH",
+    recordingLink: "https://www.youtube.com/watch?v=VW5wHh-XJug",
   },
 ];
 talkDetails.sort(function (a, b) {
