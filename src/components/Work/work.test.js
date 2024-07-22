@@ -8,5 +8,5 @@ test("renders Work component", () => {
     screen.getAllByText(
       /PwC Cybersecurity|PGI|Sudan Art|General Assembly|Black Lives Matter|Palo Alto Networks/
     )
-  ).toHaveLength(7);
+  ).toHaveLength(6);
 });

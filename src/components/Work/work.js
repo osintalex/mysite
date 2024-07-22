@@ -47,26 +47,29 @@ export default function Work() {
                       color="white"
                       rounded="sm"
                     >
-                      <a
-                        href={project.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Box p={8} as="div" key={`second container ${index}`}>
-                          <VStack
-                            spacing={4}
-                            minH={48}
-                            justifyContent="space-between"
-                            align="left"
-                          >
-                            <VStack spacing={1} align="left">
-                              {workTitle(project.title)}
-                              {project.description}
-                            </VStack>
-                            {project.url ? <Box>{workButton()}</Box> : null}
+                      <Box p={8} as="div" key={`second container ${index}`}>
+                        <VStack
+                          spacing={4}
+                          minH={48}
+                          justifyContent="space-between"
+                          align="left"
+                        >
+                          <VStack spacing={1} align="left">
+                            {workTitle(project.title)}
+                            {project.description}
                           </VStack>
-                        </Box>
-                      </a>
+
+                          {project.url ? (
+                            <a
+                              href={project.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Box>{workButton()}</Box>
+                            </a>
+                          ) : null}
+                        </VStack>
+                      </Box>
                     </Box>
                   );
                 })}

@@ -22,15 +22,14 @@ const header = () => {
         bgGradient="linear(to-l, #79c2ff, #4a5888)"
         rounded="full"
         p={1}
-        w={100}
-        h={100}
+        h={300}
+        style={{ marginBottom: "1rem" }}
       >
         <Image
           src={Headshot}
           alt=""
-          height={100}
-          width={80}
           quality={100}
+          height={300}
           style={{ borderRadius: "75%" }}
           // This handles an annoying error on firefox where it
           // flashes alt text while loading
