@@ -1,5 +1,5 @@
 import { React } from "react";
-import { Text, ListItem, UnorderedList, Heading } from "@chakra-ui/react";
+import { Text, ListItem, UnorderedList, Heading, Link } from "@chakra-ui/react";
 
 // Array of objects containing information on each project
 export const projects = [
@@ -18,6 +18,7 @@ export const projects = [
         <UnorderedList style={{ marginLeft: "1rem" }}>
           <ListItem>Python</ListItem>
           <ListItem>JavaScript/Typescript</ListItem>
+          <ListItem>Rust</ListItem>
           <ListItem>Kubernetes</ListItem>
           <ListItem>GCP/AWS</ListItem>
           <ListItem>Terraform</ListItem>
@@ -99,47 +100,32 @@ export const projects = [
     url: "https://towardsdatascience.com/trumps-twitter-network-7c59522ffe82",
   },
   {
-    title: "Sudan Art Website",
+    title: "Open Source Software",
     description: (
       <>
         <Text style={{ marginBottom: "1rem" }}>
-          I was inspired by a websited called threefingers.org that hosted
-          revolutionary art in Myanmar to make something similar following the
-          coup in Sudan.
+          I am a big believer in open source. I try and contribute to useful
+          projects whenever I can and make my own small projects - like this
+          website - public too!
         </Text>
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
-          Technologies:
+          Some stuff I made or contributed to:
         </Heading>
         <UnorderedList style={{ marginLeft: "1rem" }}>
-          <ListItem>Python</ListItem>
-          <ListItem>Django</ListItem>
-          <ListItem>React JS</ListItem>
-          <ListItem>Digital Ocean</ListItem>
+          <Link href="https://github.com/osintalex/sudan-art" isExternal>
+            <ListItem>Sudan Art Website</ListItem>
+          </Link>
+          <Link href="https://github.com/osintalex/Dash-BLM" isExternal>
+            <ListItem>BLM Project</ListItem>
+          </Link>
+          <Link href="https://github.com/samuelcolvin/dirty-equals" isExternal>
+            <ListItem>Dirty Equals</ListItem>
+          </Link>
+          <Link href="https://github.com/edgelesssys/constellation" isExternal>
+            <ListItem>Constellations</ListItem>
+          </Link>
         </UnorderedList>
       </>
     ),
-    url: "https://github.com/osintalex/sudan-art",
-  },
-  {
-    title: "Black Lives Matter",
-    description: (
-      <>
-        <Text style={{ marginBottom: "1rem" }}>
-          I built a social justice focus web app to focus on the effects of
-          structural racism in the UK, using data from the Office of National
-          Statistics and the UK Police&apos;s own data API. I&apos;m hopeful it
-          made a small difference during the protest movement in the UK.
-        </Text>
-        <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
-          Technologies:
-        </Heading>
-        <UnorderedList style={{ marginLeft: "1rem" }}>
-          <ListItem>Python</ListItem>
-          <ListItem>Plotly</ListItem>
-          <ListItem>Dash</ListItem>
-        </UnorderedList>
-      </>
-    ),
-    url: "https://github.com/osintalex/Dash-BLM",
   },
 ];
