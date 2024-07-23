@@ -21,15 +21,12 @@ const header = () => {
       <Box
         bgGradient="linear(to-l, #79c2ff, #4a5888)"
         rounded="full"
-        p={1}
-        h={300}
         style={{ marginBottom: "1rem" }}
       >
         <Image
           src={Headshot}
           alt=""
           quality={100}
-          height={300}
           style={{ borderRadius: "75%" }}
           // This handles an annoying error on firefox where it
           // flashes alt text while loading
@@ -78,34 +75,36 @@ const bio = () => {
         ))}
       </Text>
       <Text>
-        I really enjoy working in{" "}
+        I enjoy working in{" "}
         <Box as="span" fontWeight="bold">
           cybersecurity <span>🖥️ </span>{" "}
         </Box>{" "}
         since I think it&apos;s a worthwhile thing to do. Right now, we&apos;re
         building the infrastructure of the future and so much of it{" "}
         <Box as="span" fontWeight="bold">
-          just isn&apos;t safe
+          isn&apos;t safe
         </Box>
-        . I also really care about inclusion within tech and like to{" "}
+        .
+      </Text>
+      <Text>
+        I also care about inclusion within tech and like to{" "}
         <Box as="span" fontWeight="bold">
-          mentor developers
-        </Box>{" "}
-        as much as I can.
+          mentor other developers
+        </Box>
+        .
       </Text>
       <Text>
         I studied Philosophy at university, so I&apos;m a bit of a nut for{" "}
         <Box as="span" fontWeight="bold">
           clean logical processes{" "}
         </Box>{" "}
-        and this bleeds into my programming style. For instance, I actually
-        really like{" "}
+        and this bleeds into my programming style. For instance, I love{" "}
         <Box as="span" fontWeight="bold">
           writing tests{" "}
         </Box>{" "}
         and{" "}
         <Box as="span" fontWeight="bold">
-          typing Python statically
+          static typing
         </Box>
         . I try to write code that is robust, easy to read, and great at
         handling errors.
