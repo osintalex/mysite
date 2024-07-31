@@ -25,7 +25,7 @@ const header = () => {
       >
         <Image
           src={Headshot}
-          alt=""
+          alt="headshot"
           quality={100}
           style={{ borderRadius: "75%" }}
           // This handles an annoying error on firefox where it
