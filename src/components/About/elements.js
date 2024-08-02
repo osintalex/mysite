@@ -8,7 +8,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import React, { Fragment } from "react";
-import { GitHub, Linkedin } from "react-feather";
+import { GitHub } from "react-feather";
 import Headshot from "./headshot.jpg";
 import "../CSS/loading.css";
 /**
@@ -133,20 +133,6 @@ const socials = () => {
         >
           <HStack spacing={2} alignItems="center">
             <Box as={GitHub} /> <Text>Github</Text>
-          </HStack>
-        </Link>
-        <Link
-          py={2}
-          px={4}
-          href="https://www.linkedin.com/in/alexander-darby-01/"
-          rounded="sm"
-          bg="#0e76a8"
-          color="#fff"
-          fontWeight="bold"
-          isExternal
-        >
-          <HStack spacing={2} alignItems="center">
-            <Box as={Linkedin} /> <Text>LinkedIn</Text>
           </HStack>
         </Link>
       </HStack>
