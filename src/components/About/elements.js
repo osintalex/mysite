@@ -26,7 +26,7 @@ const header = () => {
         <Image
           src={Headshot}
           alt="headshot"
-          quality={100}
+          boxSize="40vw"
           style={{ borderRadius: "75%" }}
           // This handles an annoying error on firefox where it
           // flashes alt text while loading
