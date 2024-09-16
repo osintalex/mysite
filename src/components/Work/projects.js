@@ -17,7 +17,7 @@ export const projects = [
         </Heading>
         <UnorderedList style={{ marginLeft: "1rem" }}>
           <ListItem>Python</ListItem>
-          <ListItem>JavaScript/Typescript</ListItem>
+          <ListItem>JavaScript/TypeScript</ListItem>
           <ListItem>Rust</ListItem>
           <ListItem>Kubernetes</ListItem>
           <ListItem>GCP/AWS</ListItem>
@@ -43,7 +43,7 @@ export const projects = [
         </Heading>
         <UnorderedList style={{ marginLeft: "1rem" }}>
           <ListItem>Python</ListItem>
-          <ListItem>JavaScript/Typescript</ListItem>
+          <ListItem>JavaScript/TypeScript</ListItem>
           <ListItem>Go</ListItem>
           <ListItem>Kubernetes</ListItem>
           <ListItem>GCP</ListItem>
