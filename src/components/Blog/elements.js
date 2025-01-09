@@ -1,54 +1,60 @@
 import React from "react";
 import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import PropTypes from "prop-types";
 
 /**
- * Date element for article
- * @param {String} date
- * @return {JSX} the date.
+ * Date component for article
+ * @param {PostDate.propTypes} props
+ * @return {ReactElement}
  */
-export const postDate = (date) => {
+export const PostDate = ({ date }) => {
   return (
     <Box>
       <Text fontSize="sm" color="gray.400">
-        {date}
+        abc
       </Text>
     </Box>
   );
 };
-
+PostDate.propTypes = {
+  date: PropTypes.string,
+};
 /**
- * Title element for article
- * @param {String} title
- * @return {JSX} the title.
+ * Title component for article
+ * @param {PostTitle.propTypes} props
+ * @return {ReactElement}
  */
-export const postTitle = (title) => {
+export const PostTitle = ({ title }) => {
   return (
     <Heading as="h3" size="md" color="blue.400" fontWeight="bold">
       {title}
     </Heading>
   );
 };
-
-/**
- * Description element for article
- * @param {String} description
- * @return {JSX} article description.
- */
-export const postDescription = (description) => {
-  return <Text fontSize="sm">{description}</Text>;
+PostTitle.propTypes = {
+  title: PropTypes.string,
 };
 
 /**
- * List of all articles returned from medium RSS feed.
- * @param {Array} article contains objects pertaining to parsed articles
- * from the RSS feed.
- * @param {Number} index just the index of each item in the list
- * @return {JSX} elements for each article.
+ * Description component for article
+ * @param {PostDescription.propTypes} description
+ * @return {ReactElement}
  */
-const articleList = (article, index) => {
+export const PostDescription = ({ description }) => {
+  return <Text fontSize="sm">{description}</Text>;
+};
+PostDescription.propTypes = {
+  description: PropTypes.string,
+};
+/**
+ * List of all articles returned from medium RSS feed.
+ * @param {ArticleList.propTypes} article
+ * @return {ReactElement}
+ */
+const ArticleList = ({ article }) => {
   return (
     <>
-      <Box key={index}>
+      <Box>
         <a
           href={article.url}
           target="_blank"
@@ -56,9 +62,9 @@ const articleList = (article, index) => {
         >
           <Box>
             <VStack spacing={1} align="left">
-              {postDate(article.date)}
-              {postTitle(article.title)}
-              {postDescription(article.description)}
+              <PostDate date={article.date} />
+              <PostTitle title={article.title} />
+              <PostDescription description={article.description} />
             </VStack>
           </Box>
         </a>
@@ -66,5 +72,7 @@ const articleList = (article, index) => {
     </>
   );
 };
-
-export { articleList };
+ArticleList.propTypes = {
+  article: PropTypes.object,
+};
+export { ArticleList };

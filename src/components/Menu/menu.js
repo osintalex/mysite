@@ -28,44 +28,50 @@ const links = [
 ];
 
 /**
+ * Menu bar component
+ * @return {ReactElement} the menu bar
+ */
+const MenuBar = () => {
+  const navigate = useNavigate();
+
+  return (
+    <HStack
+      isInline
+      spacing={4}
+      alignItems="center"
+      aria-label="navigation-menu"
+    >
+      {[
+        links.map((link) => {
+          return (
+            <Box key={link.url}>
+              <Link
+                px={4}
+                py={2}
+                onClick={() => navigate(link.url)}
+                rounded="sm"
+                fontSize="sm"
+                _hover={{
+                  textDecoration: "none",
+                  bgColor: "gray.800",
+                }}
+                _focus={{ outline: "none" }}
+              >
+                {link.title}
+              </Link>
+            </Box>
+          );
+        }),
+      ]}
+    </HStack>
+  );
+};
+/**
  * Navigation menu component.
- * @return {ReactElement} the menubar.
+ * @return {ReactElement}
  */
 const Navbar = () => {
   const navigate = useNavigate();
-  const menuBar = () => {
-    return (
-      <HStack
-        isInline
-        spacing={4}
-        alignItems="center"
-        aria-label="navigation-menu"
-      >
-        {[
-          links.map((link) => {
-            return (
-              <Box key={link.url}>
-                <Link
-                  px={4}
-                  py={2}
-                  onClick={() => navigate(link.url)}
-                  rounded="sm"
-                  fontSize="sm"
-                  _hover={{
-                    textDecoration: "none",
-                    bgColor: "gray.800",
-                  }}
-                  _focus={{ outline: "none" }}
-                >
-                  {link.title}
-                </Link>
-              </Box>
-            );
-          }),
-        ]}
-      </HStack>
-    );
-  };
 
   return (
     <Box as="header" zIndex={1} borderTopWidth={5} borderColor="blue.400">
@@ -77,7 +83,7 @@ const Navbar = () => {
           flexDir={["column", "column", "row"]}
           gridGap={[4, 4, 0]}
         >
-          <Box d="flex" alignItems="center">
+          <Box display="flex" alignItems="center">
             <Link
               onClick={() => navigate("/")}
               d="flex"
@@ -94,7 +100,7 @@ const Navbar = () => {
               />
             </Link>
           </Box>
-          {menuBar()}
+          <MenuBar />
         </HStack>
       </Box>
     </Box>

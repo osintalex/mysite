@@ -1,24 +1,27 @@
 import { React } from "react";
 import { Button, Heading } from "@chakra-ui/react";
+import PropTypes from "prop-types";
 
 /**
  * Title for a work card.
- * @param {String} title
- * @return {JSX} the title.
+ * @param {WorkTitle.propTypes} props
+ * @return {ReactElement}
  */
-const workTitle = (title) => {
+const WorkTitle = ({ title }) => {
   return (
     <Heading as="h3" size="md" lineHeight="tall" color="blue.400">
       {title}
     </Heading>
   );
 };
-
+WorkTitle.propTypes = {
+  title: PropTypes.string,
+};
 /**
  * CTA style button for each project.
- * @return {JSX} the button.
+ * @return {ReactElement}
  */
-const workButton = () => {
+const WorkButton = () => {
   return (
     <Button fontSize="sm" bg="gray.900" _hover={{}}>
       View project
@@ -26,4 +29,4 @@ const workButton = () => {
   );
 };
 
-export { workTitle, workButton };
+export { WorkTitle, WorkButton };

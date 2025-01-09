@@ -15,7 +15,7 @@ const Footer = () => {
     <Box p={4} as="footer">
       <Box maxW="6xl" mx="auto" fontSize="sm">
         <Box
-          d="flex"
+          display="flex"
           textAlign="center"
           justifyContent="center"
           alignItems="center"

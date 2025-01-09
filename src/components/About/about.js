@@ -2,7 +2,7 @@ import { Box, Grid, VStack } from "@chakra-ui/react";
 import React from "react";
 import Menu from "../Menu/menu.js";
 import Footer from "../Footer/footer.js";
-import { header, bio, socials } from "./elements.js";
+import { Header, Bio, Socials } from "./elements.js";
 
 /**
  * About component.
@@ -16,9 +16,9 @@ export default function About() {
         <Grid templateColumns="1fr">
           <Box as="section">
             <VStack spacing={4} align="left">
-              {header()}
-              {bio()}
-              {socials()}
+              <Header />
+              <Bio />
+              <Socials />
             </VStack>
           </Box>
         </Grid>

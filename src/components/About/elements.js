@@ -12,10 +12,10 @@ import { GitHub } from "react-feather";
 import Headshot from "./headshot.jpg";
 import "../CSS/loading.css";
 /**
- * Header JSX element.
- * @return {JSX} header html as jsx
+ * Header component.
+ * @return {ReactElement}
  */
-const header = () => {
+const Header = () => {
   return (
     <HStack spacing={4} alignItems="center">
       <Box
@@ -46,10 +46,10 @@ const header = () => {
 };
 
 /**
- * Bio element.
- * @return {JSX} html for bio as jsx
+ * Bio component
+ * @return {ReactElement}
  */
-const bio = () => {
+const Bio = () => {
   const technologies = ["TypeScript", "Go", "Rust", "Kubernetes", "Terraform"];
   const technologiesLength = technologies.length;
   return (
@@ -114,12 +114,12 @@ const bio = () => {
 };
 
 /**
- * Socials JSX element.
- * @return {JSX} html for socials as jsx.
+ * Socials component
+ * @return {Fragment}
  */
-const socials = () => {
+const Socials = () => {
   return (
-    <Box d="flex" alignItems="center">
+    <Box display="flex" alignItems="center">
       <HStack spacing={4}>
         <Link
           py={2}
@@ -140,4 +140,4 @@ const socials = () => {
   );
 };
 
-export { header, bio, socials };
+export { Header, Bio, Socials };

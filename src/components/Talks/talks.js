@@ -2,7 +2,7 @@ import { Box, Heading, SlideFade, Grid, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import Menu from "../Menu/menu.js";
 import Footer from "../Footer/footer.js";
-import { talksList } from "./elements.js";
+import { TalksList } from "./elements.js";
 import { talkDetails } from "./details.js";
 import "../CSS/blog.css";
 
@@ -33,7 +33,14 @@ export default function Talks() {
                       key={`${index} container`}
                       aria-label="blog posts container"
                     >
-                      {talksList(talk, index)}
+                      <TalksList
+                        conference={talk.conference}
+                        date={talk.date}
+                        title={talk.title}
+                        description={talk.description}
+                        recordingLink={talk.recordingLink}
+                        slidesLink={talk.slidesLink}
+                      />
                     </div>
                   );
                 })}

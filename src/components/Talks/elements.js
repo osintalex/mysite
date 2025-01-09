@@ -1,15 +1,15 @@
 import React from "react";
-import { postDate, postTitle, postDescription } from "../Blog/elements.js";
+import { PostDate, PostTitle, PostDescription } from "../Blog/elements.js";
 import { Box, VStack, Tag, TagLabel } from "@chakra-ui/react";
 import "../CSS/talks.css";
+import PropTypes from "prop-types";
 
 /**
  * Tags for talk recording and slide links.
- * @param {String} slideLink contains url for slides to a talk.
- * @param {String} recordingLink contains url for recording of a talk.
- * @return {JSX} elements for each article.
+ * @param {TalkTags.propTypes} props
+ * @return {ReactElement}
  */
-const talkTags = (slideLink, recordingLink) => {
+const TalkTags = ({ slideLink, recordingLink }) => {
   return (
     <>
       <Box className="tags-container">
@@ -50,32 +50,48 @@ const talkTags = (slideLink, recordingLink) => {
     </>
   );
 };
+TalkTags.propTypes = {
+  slideLink: PropTypes.string,
+  recordingLink: PropTypes.string,
+};
 /**
  * List of talks.
- * @param {Array} talk contains objects for a given talk.
- * @param {Number} index just the index of each item in the list
- * @return {JSX} elements for each article.
+ * @param {TalksList.propTypes} props
+ * @return {ReactElement}
  */
-const talksList = (talk, index) => {
+const TalksList = ({
+  conference,
+  date,
+  description,
+  slidesLink,
+  recordingLink,
+  title,
+}) => {
   return (
     <>
-      <Box key={index}>
-        <Box>
-          <VStack spacing={1} align="left">
-            {postDate(talk.date)}
-            {postTitle(talk.title)}
-            <Box as="span" fontWeight="bold">
-              {talk.conference}
-            </Box>
-            {postDescription(talk.description)}
-            {(talk.slidesLink || talk.recordingLink) &&
-              talkTags(talk.slidesLink, talk.recordingLink)}
-            <Box></Box>
-          </VStack>
-        </Box>
+      <Box>
+        <VStack spacing={1} align="left">
+          <PostDate date={date} />
+          <PostTitle title={title} />
+          <Box as="span" fontWeight="bold">
+            {conference}
+          </Box>
+          <PostDescription description={description} />
+          {(slidesLink || recordingLink) && (
+            <TalkTags slideLink={slidesLink} recordingLink={recordingLink} />
+          )}
+          <Box></Box>
+        </VStack>
       </Box>
     </>
   );
 };
-
-export { talksList };
+TalksList.propTypes = {
+  date: PropTypes.string,
+  description: PropTypes.string,
+  conference: PropTypes.string,
+  recordingLink: PropTypes.string,
+  slidesLink: PropTypes.string,
+  title: PropTypes.string,
+};
+export { TalksList };
