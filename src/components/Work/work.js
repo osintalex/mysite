@@ -2,7 +2,7 @@ import { Box, Grid, SlideFade, VStack, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import Menu from "../Menu/menu.js";
 import Footer from "../Footer/footer.js";
-import { workTitle, workButton } from "./elements.js";
+import { WorkTitle, WorkButton } from "./elements.js";
 import { projects } from "./projects.js";
 
 /**
@@ -55,17 +55,18 @@ export default function Work() {
                           align="left"
                         >
                           <VStack spacing={1} align="left">
-                            {workTitle(project.title)}
+                            <WorkTitle title={project.title} />
                             {project.description}
                           </VStack>
-
                           {project.url ? (
                             <a
                               href={project.url}
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              <Box>{workButton()}</Box>
+                              <Box>
+                                <WorkButton />
+                              </Box>
                             </a>
                           ) : null}
                         </VStack>

@@ -11,7 +11,7 @@ import React, { useState, useEffect } from "react";
 import Menu from "../Menu/menu.js";
 import Footer from "../Footer/footer.js";
 import { Loader } from "react-feather";
-import { articleList } from "./elements.js";
+import { ArticleList } from "./elements.js";
 import "../CSS/blog.css";
 
 // Used to parse medium API response
@@ -110,7 +110,10 @@ export default function Blog() {
                         key={`${index} container`}
                         aria-label="blog posts container"
                       >
-                        {articleList(article, index)}
+                        <ArticleList
+                          article={article}
+                          key={`article-${index}`}
+                        />
                       </div>
                     );
                   })
