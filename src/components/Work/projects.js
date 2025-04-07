@@ -112,17 +112,17 @@ export const projects = [
           Some stuff I made or contributed to:
         </Heading>
         <UnorderedList style={{ marginLeft: "1rem" }}>
-          <Link href="https://github.com/osintalex/sudan-art" isExternal>
-            <ListItem>Sudan Art Website</ListItem>
-          </Link>
-          <Link href="https://github.com/osintalex/Dash-BLM" isExternal>
-            <ListItem>BLM Project</ListItem>
+          <Link href="https://github.com/enquo/pg_enquo" isExternal>
+            <ListItem>PG Enquo</ListItem>
           </Link>
           <Link href="https://github.com/samuelcolvin/dirty-equals" isExternal>
             <ListItem>Dirty Equals</ListItem>
           </Link>
           <Link href="https://github.com/edgelesssys/constellation" isExternal>
             <ListItem>Constellations</ListItem>
+          </Link>
+          <Link href="https://github.com/osintalex/Dash-BLM" isExternal>
+            <ListItem>BLM Project</ListItem>
           </Link>
         </UnorderedList>
       </>

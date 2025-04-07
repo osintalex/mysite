@@ -11,7 +11,7 @@ export const PostDate = ({ date }) => {
   return (
     <Box>
       <Text fontSize="sm" color="gray.400">
-        abc
+        {date}
       </Text>
     </Box>
   );
