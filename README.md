@@ -35,6 +35,7 @@ for this site. Thank you :innocent:
 In a strange world where you'd like to copy my own personal site - to which you are very welcome by the way - you would clone this repository and then just run:
 
 ```
+npm i
 npm test
 npm start
 ```
