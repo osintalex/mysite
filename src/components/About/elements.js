@@ -18,21 +18,26 @@ import "../CSS/loading.css";
 const Header = () => {
   return (
     <HStack spacing={4} alignItems="center">
-      <Box
-        bgGradient="linear(to-l, #79c2ff, #4a5888)"
-        rounded="full"
-        style={{ marginBottom: "1rem" }}
-      >
-        <Image
-          src={Headshot}
-          alt="headshot"
-          boxSize="40vw"
-          style={{ borderRadius: "75%" }}
-          // This handles an annoying error on firefox where it
-          // flashes alt text while loading
-          id="image-that-loads"
-        />
-      </Box>
+      <VStack>
+        <Box
+          bgGradient="linear(to-l, #79c2ff, #4a5888)"
+          rounded="full"
+          style={{ marginBottom: "0.25rem" }}
+        >
+          <Image
+            src={Headshot}
+            alt="headshot"
+            boxSize="40vw"
+            style={{ borderRadius: "75%" }}
+            // This handles an annoying error on firefox where it
+            // flashes alt text while loading
+            id="image-that-loads"
+          />
+        </Box>
+        <Text as="i" fontSize="sm">
+          illustration by Dmitrii Narozhnii
+        </Text>
+      </VStack>
       <Box>
         <VStack spacing={2} align="left">
           <Heading as="h1" size="xl">
