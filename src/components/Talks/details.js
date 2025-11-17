@@ -36,7 +36,7 @@ export const talkDetails = [
   {
     date: "2024-06-17",
     conference: "PyData London",
-    title: " 5 Things I Learnt from Causing a Cloud Provider Outage",
+    title: "5 Things I Learnt from Causing a Cloud Provider Outage",
     description: `Earlier this year, my team caused an outage across Europe for a major cloud provider. 
     The incident response taught me a lot about working with cloud data lake systems at massive scale. 
     How do you make these systems performant, resilient, and easy to maintain? 
@@ -44,6 +44,14 @@ export const talkDetails = [
     slidesLink:
       "https://drive.google.com/file/d/1OrKJhOOOXPMzISnSfR-nKEMf-TmnUJlH",
     recordingLink: "https://www.youtube.com/watch?v=VW5wHh-XJug",
+  },
+  {
+    date: "2025-11-16",
+    conference: "PyCon Ireland",
+    title: "Securing AI Agents in Production",
+    description: `As AI agents become increasingly ubiquitous, the pressure to ship them quickly and keep up with the latest advancements can lead to security taking a backseat. However, this doesn't have to be the case. In this talk, we'll explore how to apply existing secure software patterns to AI agents, even in the face of rapid innovation and changing frameworks. I'll start by building an AI agent from scratch in pure Python, which will help us understand the underlying mechanics and identify potential security risks. From there, we'll discuss how to package and ship AI agents securely, using frameworks like Google ADK as an example.`,
+    slidesLink:
+      "https://drive.google.com/file/d/13PEfME3UbGxWkYFgnuH7MyxEHMz37sbl/view",
   },
 ];
 talkDetails.sort(function (a, b) {
