@@ -1,17 +1,17 @@
 import {
   Box,
   Heading,
-  SlideFade,
   Grid,
   Text,
   VStack,
   Link,
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
-import Menu from "../Menu/menu.js";
-import Footer from "../Footer/footer.js";
+import Menu from "../Menu/menu.jsx";
+import Footer from "../Footer/footer.jsx";
+import { FadeIn } from "../FadeIn/fadeIn.jsx";
 import { Loader } from "react-feather";
-import { ArticleList } from "./elements.js";
+import { ArticleList } from "./elements.jsx";
 import "../CSS/blog.css";
 
 // Used to parse medium API response
@@ -77,12 +77,12 @@ export default function Blog() {
   return (
     <>
       <Menu />
-      <SlideFade in>
+      <FadeIn>
         <Box maxW="2xl" mx="auto" px={4} py={8}>
           <Grid templateColumns="1fr">
             <Box as="section">
-              <VStack spacing={8} align="left">
-                <VStack spacing={2} align="left">
+              <VStack gap={8} align="start">
+                <VStack gap={2} align="start">
                   <Heading as="h1" size="xl">
                     Writing
                   </Heading>
@@ -91,7 +91,8 @@ export default function Blog() {
                     <Link
                       href="https://medium.com/@alexanderdarby"
                       fontWeight="bold"
-                      isExternal
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Medium
                     </Link>{" "}
@@ -122,7 +123,7 @@ export default function Blog() {
             </Box>
           </Grid>
         </Box>
-      </SlideFade>
+      </FadeIn>
       <Footer />
     </>
   );

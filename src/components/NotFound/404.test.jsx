@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import NotFound from "./404.js";
+import NotFound from "./404.jsx";
 
 test("renders Not Found component", () => {
   render(<NotFound />);

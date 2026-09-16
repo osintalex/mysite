@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Landing from "./landing.js";
+import Landing from "./landing.jsx";
 
 test("renders Landing component", () => {
   render(<Landing />);

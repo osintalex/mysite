@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Work from "./work.js";
+import Work from "./work.jsx";
 
 test("renders Work component", () => {
   render(<Work />);

@@ -1,12 +1,12 @@
-import React from "react";
-import { render, screen, waitFor, act } from "@testing-library/react";
-import Blog from "./blog.js";
+import React, { act } from "react";
+import { render, screen, waitFor } from "@testing-library/react";
+import Blog from "./blog.jsx";
 
 describe("Blog", () => {
   let originalFetch;
   beforeEach(() => {
     originalFetch = global.fetch;
-    global.fetch = jest.fn(() =>
+    global.fetch = vi.fn(() =>
       Promise.resolve({
         json: () =>
           Promise.resolve({

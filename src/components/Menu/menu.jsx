@@ -35,12 +35,7 @@ const MenuBar = () => {
   const navigate = useNavigate();
 
   return (
-    <HStack
-      isInline
-      spacing={4}
-      alignItems="center"
-      aria-label="navigation-menu"
-    >
+    <HStack gap={4} alignItems="center" aria-label="navigation-menu">
       {[
         links.map((link) => {
           return (
@@ -51,9 +46,10 @@ const MenuBar = () => {
                 onClick={() => navigate(link.url)}
                 rounded="sm"
                 fontSize="sm"
+                color="white"
                 _hover={{
                   textDecoration: "none",
-                  bgColor: "gray.800",
+                  background: "gray.800",
                 }}
                 _focus={{ outline: "none" }}
               >
@@ -81,12 +77,12 @@ const Navbar = () => {
           alignItems="center"
           py={4}
           flexDir={["column", "column", "row"]}
-          gridGap={[4, 4, 0]}
+          gap={[4, 4, 0]}
         >
           <Box display="flex" alignItems="center">
             <Link
               onClick={() => navigate("/")}
-              d="flex"
+              display="flex"
               _focus={{ outline: "none" }}
               aria-label="Logo"
             >

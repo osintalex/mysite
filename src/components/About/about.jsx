@@ -1,8 +1,8 @@
 import { Box, Grid, VStack } from "@chakra-ui/react";
 import React from "react";
-import Menu from "../Menu/menu.js";
-import Footer from "../Footer/footer.js";
-import { Header, Bio, Socials } from "./elements.js";
+import Menu from "../Menu/menu.jsx";
+import Footer from "../Footer/footer.jsx";
+import { Header, Bio, Socials } from "./elements.jsx";
 
 /**
  * About component.
@@ -15,7 +15,7 @@ export default function About() {
       <Box maxW="2xl" mx="auto" px={4} py={8}>
         <Grid templateColumns="1fr">
           <Box as="section">
-            <VStack spacing={4} align="left">
+            <VStack gap={4} align="start">
               <Header />
               <Bio />
               <Socials />

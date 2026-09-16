@@ -17,17 +17,18 @@ import "../CSS/loading.css";
  */
 const Header = () => {
   return (
-    <HStack spacing={4} alignItems="center">
+    <HStack gap={4} alignItems="center">
       <VStack>
         <Box
-          bgGradient="linear(to-l, #79c2ff, #4a5888)"
+          backgroundImage="linear-gradient(to left, #79c2ff, #4a5888)"
           rounded="full"
           style={{ marginBottom: "0.25rem" }}
         >
           <Image
             src={Headshot}
             alt="headshot"
-            boxSize="40vw"
+            width="40vw"
+            height="40vw"
             style={{ borderRadius: "75%" }}
             // This handles an annoying error on firefox where it
             // flashes alt text while loading
@@ -39,7 +40,7 @@ const Header = () => {
         </Text>
       </VStack>
       <Box>
-        <VStack spacing={2} align="left">
+        <VStack gap={2} align="start">
           <Heading as="h1" size="xl">
             Alexander Darby
           </Heading>
@@ -125,18 +126,19 @@ const Bio = () => {
 const Socials = () => {
   return (
     <Box display="flex" alignItems="center">
-      <HStack spacing={4}>
+      <HStack gap={4}>
         <Link
           py={2}
           px={4}
           href="https://github.com/osintalex"
+          target="_blank"
+          rel="noopener noreferrer"
           rounded="sm"
           bg="#333"
           color="#fff"
           fontWeight="bold"
-          isExternal
         >
-          <HStack spacing={2} alignItems="center">
+          <HStack gap={2} alignItems="center">
             <Box as={GitHub} /> <Text>Github</Text>
           </HStack>
         </Link>

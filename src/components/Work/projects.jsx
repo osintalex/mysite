@@ -1,5 +1,4 @@
-import { React } from "react";
-import { Text, ListItem, UnorderedList, Heading, Link } from "@chakra-ui/react";
+import { Text, ListItem, ListRoot, Heading, Link } from "@chakra-ui/react";
 
 // Array of objects containing information on each project
 export const projects = [
@@ -15,14 +14,14 @@ export const projects = [
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
         </Heading>
-        <UnorderedList style={{ marginLeft: "1rem" }}>
+        <ListRoot style={{ marginLeft: "1rem" }}>
           <ListItem>Python</ListItem>
           <ListItem>JavaScript/TypeScript</ListItem>
           <ListItem>Rust</ListItem>
           <ListItem>Kubernetes</ListItem>
           <ListItem>GCP/AWS</ListItem>
           <ListItem>Terraform</ListItem>
-        </UnorderedList>
+        </ListRoot>
       </>
     ),
     url: null,
@@ -41,14 +40,14 @@ export const projects = [
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
         </Heading>
-        <UnorderedList style={{ marginLeft: "1rem" }}>
+        <ListRoot style={{ marginLeft: "1rem" }}>
           <ListItem>Python</ListItem>
           <ListItem>JavaScript/TypeScript</ListItem>
           <ListItem>Go</ListItem>
           <ListItem>Kubernetes</ListItem>
           <ListItem>GCP</ListItem>
           <ListItem>Terraform</ListItem>
-        </UnorderedList>
+        </ListRoot>
       </>
     ),
     url: null,
@@ -66,12 +65,12 @@ export const projects = [
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
         </Heading>
-        <UnorderedList style={{ marginLeft: "1rem" }}>
+        <ListRoot style={{ marginLeft: "1rem" }}>
           <ListItem>Python</ListItem>
           <ListItem>Pandas/Scikit Learn/Numpy</ListItem>
           <ListItem>GCP/Azure</ListItem>
           <ListItem>Flask</ListItem>
-        </UnorderedList>
+        </ListRoot>
       </>
     ),
     url: null,
@@ -88,13 +87,13 @@ export const projects = [
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Technologies:
         </Heading>
-        <UnorderedList style={{ marginLeft: "1rem" }}>
+        <ListRoot style={{ marginLeft: "1rem" }}>
           <ListItem>Python</ListItem>
           <ListItem>Pandas/Scikit Learn/Numpy</ListItem>
           <ListItem>
             Statistics <span>😉</span>
           </ListItem>
-        </UnorderedList>
+        </ListRoot>
       </>
     ),
     url: "https://towardsdatascience.com/trumps-twitter-network-7c59522ffe82",
@@ -111,20 +110,33 @@ export const projects = [
         <Heading as="h6" size="xs" style={{ marginBottom: "1rem" }}>
           Some stuff I made or contributed to:
         </Heading>
-        <UnorderedList style={{ marginLeft: "1rem" }}>
-          <Link href="https://github.com/enquo/pg_enquo" isExternal>
-            <ListItem>PG Enquo</ListItem>
-          </Link>
-          <Link href="https://github.com/samuelcolvin/dirty-equals" isExternal>
-            <ListItem>Dirty Equals</ListItem>
-          </Link>
-          <Link href="https://github.com/edgelesssys/constellation" isExternal>
-            <ListItem>Constellations</ListItem>
-          </Link>
-          <Link href="https://github.com/osintalex/Dash-BLM" isExternal>
-            <ListItem>BLM Project</ListItem>
-          </Link>
-        </UnorderedList>
+        <ListRoot style={{ marginLeft: "1rem" }}>
+          <ListItem>
+            <Link href="https://github.com/apache/airflow" target="_blank" rel="noopener noreferrer" color="white">
+              Airflow
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://github.com/enquo/pg_enquo" target="_blank" rel="noopener noreferrer" color="white">
+              PG Enquo
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://github.com/samuelcolvin/dirty-equals" target="_blank" rel="noopener noreferrer" color="white">
+              Dirty Equals
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://github.com/edgelesssys/constellation" target="_blank" rel="noopener noreferrer" color="white">
+              Constellations
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://github.com/osintalex/Dash-BLM" target="_blank" rel="noopener noreferrer" color="white">
+              BLM Project
+            </Link>
+          </ListItem>
+        </ListRoot>
       </>
     ),
   },

@@ -1,8 +1,9 @@
-import { Box, Heading, SlideFade, Grid, Text, VStack } from "@chakra-ui/react";
+import { Box, Heading, Grid, Text, VStack } from "@chakra-ui/react";
 import React from "react";
-import Menu from "../Menu/menu.js";
-import Footer from "../Footer/footer.js";
-import { TalksList } from "./elements.js";
+import Menu from "../Menu/menu.jsx";
+import Footer from "../Footer/footer.jsx";
+import { FadeIn } from "../FadeIn/fadeIn.jsx";
+import { TalksList } from "./elements.jsx";
 import { talkDetails } from "./details.js";
 import "../CSS/blog.css";
 
@@ -14,12 +15,12 @@ export default function Talks() {
   return (
     <>
       <Menu />
-      <SlideFade in>
+      <FadeIn>
         <Box maxW="2xl" mx="auto" px={4} py={8}>
           <Grid templateColumns="1fr">
             <Box as="section">
-              <VStack spacing={8} align="left">
-                <VStack spacing={2} align="left">
+              <VStack gap={8} align="start">
+                <VStack gap={2} align="start">
                   <Heading as="h1" size="xl">
                     Talks
                   </Heading>
@@ -48,7 +49,7 @@ export default function Talks() {
             </Box>
           </Grid>
         </Box>
-      </SlideFade>
+      </FadeIn>
       <Footer />
     </>
   );
