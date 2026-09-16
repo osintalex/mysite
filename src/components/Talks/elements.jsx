@@ -1,6 +1,6 @@
 import React from "react";
-import { PostDate, PostTitle, PostDescription } from "../Blog/elements.js";
-import { Box, VStack, Tag, TagLabel } from "@chakra-ui/react";
+import { PostDate, PostTitle, PostDescription } from "../Blog/elements.jsx";
+import { Box, VStack, Tag } from "@chakra-ui/react";
 import "../CSS/talks.css";
 import PropTypes from "prop-types";
 
@@ -19,15 +19,15 @@ const TalkTags = ({ slideLink, recordingLink }) => {
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
-            <Tag
+            <Tag.Root
               size="sm"
-              colorScheme="teal"
+              colorPalette="teal"
               borderRadius="full"
               variant="subtle"
               className="slides-link"
             >
-              <TagLabel>Slides</TagLabel>
-            </Tag>
+              <Tag.Label>Slides</Tag.Label>
+            </Tag.Root>
           </a>
         )}
         {recordingLink && (
@@ -36,14 +36,9 @@ const TalkTags = ({ slideLink, recordingLink }) => {
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
-            <Tag
-              size="sm"
-              colorScheme="teal"
-              borderRadius="full"
-              variant="subtle"
-            >
-              <TagLabel>Recording</TagLabel>
-            </Tag>
+            <Tag.Root size="sm" colorPalette="teal" borderRadius="full" variant="subtle">
+              <Tag.Label>Recording</Tag.Label>
+            </Tag.Root>
           </a>
         )}
       </Box>
@@ -70,7 +65,7 @@ const TalksList = ({
   return (
     <>
       <Box>
-        <VStack spacing={1} align="left">
+        <VStack gap={1} align="start">
           <PostDate date={date} />
           <PostTitle title={title} />
           <Box as="span" fontWeight="bold">

@@ -1,15 +1,15 @@
 /* eslint-disable no-irregular-whitespace */
 /* eslint-disable max-len */
 import React from "react";
-import LandingPage from "../Landing/landing.js";
-import About from "../About/about.js";
-import Blog from "../Blog/blog.js";
-import Work from "../Work/work.js";
-import Talks from "../Talks/talks.js";
-import NotFound from "../NotFound/404.js";
+import LandingPage from "../Landing/landing.jsx";
+import About from "../About/about.jsx";
+import Blog from "../Blog/blog.jsx";
+import Work from "../Work/work.jsx";
+import Talks from "../Talks/talks.jsx";
+import NotFound from "../NotFound/404.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import customTheme from "../Theme/theme.js";
+import { system } from "../Theme/theme.js";
 
 /**
  * Main App function. Uses client side routing with React Router.
@@ -32,15 +32,15 @@ function App() {
   ╚═════╝░╚═╝░░░╚═╝░░░╚══════╝`);
   return (
     <>
-      <ChakraProvider theme={customTheme}>
+      <ChakraProvider value={system}>
         <Router>
           <Routes>
             <Route path="*" element={<NotFound />} />
-            <Route exact path="/" element={<LandingPage />}></Route>
-            <Route exact path="/about" element={<About />}></Route>
-            <Route exact path="/blog" element={<Blog />}></Route>
-            <Route exact path="/work" element={<Work />}></Route>
-            <Route exact path="/talks" element={<Talks />}></Route>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/talks" element={<Talks />} />
           </Routes>
         </Router>
       </ChakraProvider>

@@ -1,7 +1,8 @@
-import { Box, SlideFade, VStack, Heading } from "@chakra-ui/react";
+import { Box, VStack, Heading } from "@chakra-ui/react";
 import React from "react";
-import Menu from "../Menu/menu.js";
-import Footer from "../Footer/footer.js";
+import Menu from "../Menu/menu.jsx";
+import Footer from "../Footer/footer.jsx";
+import { FadeIn } from "../FadeIn/fadeIn.jsx";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
@@ -11,24 +12,20 @@ import { keyframes } from "styled-components";
  */
 export default function Landing() {
   return (
-    <>
+    <Box minH="100vh" display="flex" flexDirection="column">
       <Menu />
-      <SlideFade in>
+      <FadeIn flex="1" display="flex" flexDirection="column">
         <Box
           as="section"
-          h={[
-            "calc(100vh - 109px)",
-            "calc(100vh - 109px)",
-            "calc(100vh - 64px)",
-          ]}
-          d="flex"
+          flex="1"
+          display="flex"
           alignItems="center"
           maxW="2xl"
           mx="auto"
           px={4}
         >
           <VStack
-            spacing={8}
+            gap={8}
             alignItems="center"
             justifyContent="center"
             textAlign="center"
@@ -71,9 +68,9 @@ export default function Landing() {
             </Box>
           </VStack>
         </Box>
-      </SlideFade>
+      </FadeIn>
       <Footer />
-    </>
+    </Box>
   );
 }
 // Styled components for text gradient animation - based off https://codepen.io/caseycallow/pen/yMNqPY

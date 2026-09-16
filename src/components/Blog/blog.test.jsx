@@ -1,12 +1,12 @@
-import React from "react";
-import { render, screen, waitFor, act } from "@testing-library/react";
-import Blog from "./blog.js";
+import React, { act } from "react";
+import { render, screen, waitFor, waitForElementToBeRemoved } from "../../test-utils.jsx";
+import Blog from "./blog.jsx";
 
 describe("Blog", () => {
   let originalFetch;
   beforeEach(() => {
     originalFetch = global.fetch;
-    global.fetch = jest.fn(() =>
+    global.fetch = vi.fn(() =>
       Promise.resolve({
         json: () =>
           Promise.resolve({
@@ -74,11 +74,8 @@ describe("Blog", () => {
   });
   test("renders loading correctly", async () => {
     render(<Blog />);
-    act(() => expect(screen.getByRole("loading")).toBeInTheDocument());
-    /* This removes a code not wrapped in act warning triggered by other
-     * state events, namely setMedium and setLoading
-     */
-    await waitFor(() => screen.findByRole(/loading/));
+    expect(screen.getByRole("loading")).toBeInTheDocument();
+    await waitForElementToBeRemoved(() => screen.queryByRole("loading"));
   });
   test("renders all Blog material", async () => {
     render(<Blog />);

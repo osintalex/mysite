@@ -61,7 +61,7 @@ const ArticleList = ({ article }) => {
           rel="nofollow noopener noreferrer"
         >
           <Box>
-            <VStack spacing={1} align="left">
+            <VStack gap={1} align="start">
               <PostDate date={article.date} />
               <PostTitle title={article.title} />
               <PostDescription description={article.description} />

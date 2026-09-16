@@ -1,9 +1,10 @@
-import { Box, Grid, SlideFade, VStack, Heading, Text } from "@chakra-ui/react";
+import { Box, Grid, VStack, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import Menu from "../Menu/menu.js";
-import Footer from "../Footer/footer.js";
-import { WorkTitle, WorkButton } from "./elements.js";
-import { projects } from "./projects.js";
+import Menu from "../Menu/menu.jsx";
+import Footer from "../Footer/footer.jsx";
+import { FadeIn } from "../FadeIn/fadeIn.jsx";
+import { WorkTitle, WorkButton } from "./elements.jsx";
+import { projects } from "./projects.jsx";
 
 /**
  * Work component.
@@ -13,10 +14,10 @@ export default function Work() {
   return (
     <>
       <Menu />
-      <SlideFade in>
+      <FadeIn>
         <Box maxW="6xl" mx="auto" px={4} py={8}>
           <Box style={{ marginBottom: "2rem" }}>
-            <VStack spacing={2} align="left">
+            <VStack gap={2} align="start">
               <Heading as="h1" size="xl">
                 Professional Experience
               </Heading>
@@ -49,12 +50,12 @@ export default function Work() {
                     >
                       <Box p={8} as="div" key={`second container ${index}`}>
                         <VStack
-                          spacing={4}
+                          gap={4}
                           minH={48}
                           justifyContent="space-between"
-                          align="left"
+                          align="start"
                         >
-                          <VStack spacing={1} align="left">
+                          <VStack gap={1} align="start">
                             <WorkTitle title={project.title} />
                             {project.description}
                           </VStack>
@@ -78,7 +79,7 @@ export default function Work() {
             </Box>
           </Grid>
         </Box>
-      </SlideFade>
+      </FadeIn>
       <Footer />
     </>
   );

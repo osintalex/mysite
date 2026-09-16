@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 import React from "react";
-import Footer from "../Footer/footer.js";
-import Menu from "../Menu/menu.js";
-import { Heading, Box, SlideFade, VStack } from "@chakra-ui/react";
+import Footer from "../Footer/footer.jsx";
+import Menu from "../Menu/menu.jsx";
+import { Heading, Box, VStack } from "@chakra-ui/react";
+import { FadeIn } from "../FadeIn/fadeIn.jsx";
 
 /**
  * Very basic 404; not found routing handled in app.js.
@@ -15,7 +16,7 @@ const NotFound = () => {
   return (
     <>
       <Menu />
-      <SlideFade in>
+      <FadeIn>
         <Box
           as="section"
           h={[
@@ -23,7 +24,7 @@ const NotFound = () => {
             "calc(100vh - 109px)",
             "calc(100vh - 64px)",
           ]}
-          d="flex"
+          display="flex"
           alignItems="center"
           maxW="2xl"
           mx="auto"
@@ -31,7 +32,7 @@ const NotFound = () => {
           justifyContent="center"
         >
           <VStack
-            spacing={8}
+            gap={8}
             alignItems="center"
             justifyContent="center"
             textAlign="center"
@@ -44,7 +45,7 @@ const NotFound = () => {
             </Box>
           </VStack>
         </Box>
-      </SlideFade>
+      </FadeIn>
       <Footer />
     </>
   );

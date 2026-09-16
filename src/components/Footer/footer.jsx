@@ -20,11 +20,11 @@ const Footer = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <HStack spacing={2}>
-            <Box d="flex" alignItems="center">
+          <HStack gap={2}>
+            <Box display="flex" alignItems="center">
               <Link
                 onClick={() => navigate("/")}
-                d="flex"
+                display="flex"
                 _focus={{ outline: "none" }}
                 aria-label="Logo"
               >
